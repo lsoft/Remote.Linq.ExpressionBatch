@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <LangVersion>Latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <WarningsAsErrors>nullable;CS8766;CS8767</WarningsAsErrors> 
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="protobuf-net.Grpc.Native" Version="1.0.140" />
+    <PackageReference Include="Remote.Linq" Version="7.0.0-alpha-024" />
+    <PackageReference Include="Remote.Linq.protobuf-net" Version="7.0.0-alpha-024" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\RemoteLinq.ExpressionBatch\RemoteLinq.ExpressionBatch.csproj" />
+  </ItemGroup>
+
+</Project>

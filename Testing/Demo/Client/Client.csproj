@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <LangVersion>Latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <WarningsAsErrors>nullable;CS8766;CS8767</WarningsAsErrors> 
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Remote.Linq" Version="7.0.0-alpha-024" />
+<!--    <PackageReference Include="Remote.Linq.Newtonsoft.Json" Version="7.0.0-alpha-024" /> -->
+    <PackageReference Include="Remote.Linq.protobuf-net" Version="7.0.0-alpha-024" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shared\Shared.csproj" />
+    <ProjectReference Include="..\..\..\RemoteLinq.ExpressionBatch\RemoteLinq.ExpressionBatch.csproj" />
+  </ItemGroup>
+
+</Project>
