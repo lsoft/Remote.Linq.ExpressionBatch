@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using RemoteLinq.ExpressionBatch.Executor;
 
 namespace Shared.Executor
@@ -18,6 +19,16 @@ namespace Shared.Executor
             }
 
             _grpcService = grpcService;
+        }
+
+        /// <inheritdoc />
+        protected override Task<byte[]> SendReceiveAsync(
+            byte[] request
+            )
+        {
+            var replyBlob = _grpcService.ExecuteQuery(request);
+
+            return Task.FromResult(replyBlob);
         }
 
         /// <inheritdoc />

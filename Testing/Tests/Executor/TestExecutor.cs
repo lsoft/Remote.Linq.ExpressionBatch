@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using Aqua.Dynamic;
 using Remote.Linq.Expressions;
 using RemoteLinq.ExpressionBatch.Executor;
@@ -22,6 +23,14 @@ namespace Tests.Executor
             }
 
             _dataModel = dataModel;
+        }
+
+        /// <inheritdoc />
+        protected override Task<byte[]> SendReceiveAsync(
+            byte[] request
+            )
+        {
+            return Task.FromResult(SendReceive(request));
         }
 
         /// <inheritdoc />
