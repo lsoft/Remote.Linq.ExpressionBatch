@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using Aqua.TypeSystem;
+using Remote.Linq.ProtoBuf;
 
 namespace RemoteLinq.ExpressionBatch.SerDe
 {
@@ -9,7 +9,7 @@ namespace RemoteLinq.ExpressionBatch.SerDe
     {
         public const int Version = 1;
 
-        private readonly ProtoBuf.Meta.RuntimeTypeModel _configuration = Remote.Linq.ProtoBufTypeModel.ConfigureRemoteLinq();
+        private readonly ProtoBuf.Meta.RuntimeTypeModel _configuration = ProtoBufTypeModel.ConfigureRemoteLinq();
 
         public static readonly ProtobufExpressionSerializerV1 Instance = new ProtobufExpressionSerializerV1();
 

@@ -13,7 +13,7 @@ namespace RemoteLinq.ExpressionBatch.Executor
     /// </summary>
     public abstract class BaseRemoteExecutor
     {
-        private readonly Remote.Linq.IQueryResultMapper<DynamicObject> _resultMapper;
+        private readonly IQueryResultMapper<DynamicObject> _resultMapper;
 
         protected BaseRemoteExecutor()
         {
@@ -24,7 +24,7 @@ namespace RemoteLinq.ExpressionBatch.Executor
         /// <summary>
         /// Execute one IQueryable per network request
         /// </summary>
-        public async Task<T0> ExecuteAsync<T0>(
+        public async Task<T0?> ExecuteAsync<T0>(
             Materialized<T0> m0
             )
         {
@@ -58,7 +58,7 @@ namespace RemoteLinq.ExpressionBatch.Executor
         /// <summary>
         /// Execute one IQueryable per network request
         /// </summary>
-        public T0 Execute<T0>(
+        public T0? Execute<T0>(
             Materialized<T0> m0
             )
         {
@@ -92,7 +92,7 @@ namespace RemoteLinq.ExpressionBatch.Executor
         /// <summary>
         /// Execute two IQueryable's per network request
         /// </summary>
-        public async Task<(T0, T1)> ExecuteAsync<T0, T1>(
+        public async Task<(T0?, T1?)> ExecuteAsync<T0, T1>(
             Materialized<T0> m0,
             Materialized<T1> m1
             )
@@ -135,7 +135,7 @@ namespace RemoteLinq.ExpressionBatch.Executor
         /// <summary>
         /// Execute two IQueryable's per network request
         /// </summary>
-        public (T0, T1) Execute<T0, T1>(
+        public (T0?, T1?) Execute<T0, T1>(
             Materialized<T0> m0,
             Materialized<T1> m1
             )
@@ -178,7 +178,7 @@ namespace RemoteLinq.ExpressionBatch.Executor
         /// <summary>
         /// Execute three IQueryable's per network request
         /// </summary>
-        public async Task<(T0, T1, T2)> ExecuteAsync<T0, T1, T2>(
+        public async Task<(T0?, T1?, T2?)> ExecuteAsync<T0, T1, T2>(
             Materialized<T0> m0,
             Materialized<T1> m1,
             Materialized<T2> m2
@@ -230,7 +230,7 @@ namespace RemoteLinq.ExpressionBatch.Executor
         /// <summary>
         /// Execute three IQueryable's per network request
         /// </summary>
-        public (T0, T1, T2) Execute<T0, T1, T2>(
+        public (T0?, T1?, T2?) Execute<T0, T1, T2>(
             Materialized<T0> m0,
             Materialized<T1> m1,
             Materialized<T2> m2

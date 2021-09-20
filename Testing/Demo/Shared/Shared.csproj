@@ -9,8 +9,8 @@
 
   <ItemGroup>
     <PackageReference Include="protobuf-net.Grpc.Native" Version="1.0.140" />
-    <PackageReference Include="Remote.Linq" Version="7.0.0-alpha-024" />
-    <PackageReference Include="Remote.Linq.protobuf-net" Version="7.0.0-alpha-024" />
+    <PackageReference Include="Remote.Linq" Version="7.0.0-beta-004" />
+    <PackageReference Include="Remote.Linq.protobuf-net" Version="7.0.0-beta-004" />
   </ItemGroup>
 
   <ItemGroup>
