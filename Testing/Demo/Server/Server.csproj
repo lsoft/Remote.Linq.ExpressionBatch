@@ -9,10 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Grpc.Core" Version="2.34.0" />
-    <PackageReference Include="Remote.Linq" Version="7.0.0-beta-004" />
+    <PackageReference Include="Grpc.Core" Version="2.41.1" />
+    <PackageReference Include="Remote.Linq" Version="7.0.0" />
 <!--    <PackageReference Include="Remote.Linq.Newtonsoft.Json" Version="7.0.0-alpha-024" /> -->
-    <PackageReference Include="Remote.Linq.protobuf-net" Version="7.0.0-beta-004" />
+    <PackageReference Include="Remote.Linq.protobuf-net" Version="7.0.0" />
     <PackageReference Include="linq2db" Version="3.2.3" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="2.1.1" />
   </ItemGroup>

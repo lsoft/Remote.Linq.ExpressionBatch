@@ -9,9 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Remote.Linq" Version="7.0.0-beta-004" />
+    <PackageReference Include="Remote.Linq" Version="7.0.0" />
 <!--    <PackageReference Include="Remote.Linq.Newtonsoft.Json" Version="7.0.0-alpha-024" /> -->
-    <PackageReference Include="Remote.Linq.protobuf-net" Version="7.0.0-beta-004" />
+    <PackageReference Include="Remote.Linq.protobuf-net" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
