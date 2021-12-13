@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>Remote.Linq.ExpressionBatch</id>
+    <version>7.0</version>
+    <authors>ls</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/lsoft/Remote.Linq.ExpressionBatch</projectUrl>
+    <!-- <iconUrl>http://icon_url_here_or_delete_this_line/</iconUrl> -->
+    <description>A demonstration of sending multiple Remote.Linq expressions per single network request. It is useful in case you need to execute multiple expressions per single transaction and you cannot share a server's RDBMS transaction across few network requests (that's never a good idea, I guess). It is based on Remote.Linq 7.0 (https://github.com/6bee/Remote.Linq).</description>
+    <!-- <releaseNotes></releaseNotes> -->
+    <copyright>(c) ls 2021</copyright>
+    <tags>linq, remote, remote-query</tags>
+    <dependencies>
+      <group targetFramework="netstandard2.1" />
+    </dependencies>
+  </metadata>
+
+  <files>
+    <file src="RemoteLinq.ExpressionBatch\bin\Release\netstandard2.1\RemoteLinq.ExpressionBatch.dll" target="lib/netstandard2.1" />
+    <file src="RemoteLinq.ExpressionBatch\bin\Release\netstandard2.1\RemoteLinq.ExpressionBatch.xml" target="lib/netstandard2.1" />
+  </files>
+
+</package>
