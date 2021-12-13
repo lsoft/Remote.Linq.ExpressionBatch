@@ -13,7 +13,7 @@
     <PackageReference Include="Remote.Linq" Version="7.0.0" />
 <!--    <PackageReference Include="Remote.Linq.Newtonsoft.Json" Version="7.0.0-alpha-020" /> -->
     <PackageReference Include="Remote.Linq.protobuf-net" Version="7.0.0" />
-    <PackageReference Include="System.ServiceModel.Primitives" Version="4.8.1" />
+    <PackageReference Include="System.ServiceModel.Primitives" Version="4.9.0" />
   </ItemGroup>
 
 </Project>
